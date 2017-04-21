@@ -1,0 +1,21 @@
+Source: chewup
+Section: utils
+Priority: optional
+Maintainer: samwhelp <samwhelp@users.noreply.github.com>
+Build-Depends: debhelper (>= 9)
+  , python3 (>= 3.5)
+X-Python3-Version: >= 3.5
+Standards-Version: 3.9.6
+Vcs-Git: https://github.com/samwhelp/util-chewup.git
+Vcs-Browser: https://github.com/samwhelp/util-chewup
+
+Package: chewup
+Section: utils
+Architecture: all
+Depends: ${misc:Depends}
+  , python3
+  , python3-gi
+  , gir1.2-gtk-3.0
+  , gir1.2-keybinder-3.0
+  , gir1.2-appindicator3-0.1
+Description: Chewing user phrase editor and cli util.

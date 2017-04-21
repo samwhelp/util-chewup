@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=chewup-editor
+GenericName=chewup
+Exec=chewup-editor
+Icon=gnome-settings
+Categories=Settings;
+Keywords=chewing
