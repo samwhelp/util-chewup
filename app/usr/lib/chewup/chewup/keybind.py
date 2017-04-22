@@ -12,8 +12,8 @@ class Keybind:
 	accelerator_name_fullscreen = 'F11'
 	accelerator_name_close = 'F4'
 
-	def __init__ (self):
-		pass
+	def prep (self, *args, **kwds):
+		self.app = kwds['app']
 
 	def init (self):
 		self.init_keybind()

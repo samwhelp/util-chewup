@@ -19,8 +19,8 @@ class UserPhraseList:
 	column_phrase_head_title = 'Phrase'
 	column_bopomofo_head_title = 'Bopomofo'
 
-	def __init__ (self):
-		pass
+	def prep (self, *args, **kwds):
+		self.app = kwds['app']
 
 	def init (self):
 		self.init_scroll()

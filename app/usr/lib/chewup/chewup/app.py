@@ -15,16 +15,19 @@ from chewup.act.service import Service
 
 
 class App:
-
 	name = 'chewup'
 
 	signal = None
-	win = None
-	indicator = None
 	keybind = None
 
-	def __init__ (self):
-		pass
+	mediator = None
+	service = None
+
+	win = None
+	indicator = None
+
+	#def __init__ (self):
+	#	pass
 
 	def init (self):
 		self.signal = signal = Signal()
@@ -55,7 +58,6 @@ class App:
 		Gtk.main()
 
 	def go_show_about (self):
-		#print('about:')
 		self.mediator.go_show_about()
 
 	def go_quit (self):

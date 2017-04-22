@@ -18,8 +18,8 @@ class Indicator:
 	icon_name_on_win_deactivate = 'folder'
 	icon_name_btn_app_quit = 'application-exit'
 
-	def __init__ (self):
-		pass
+	def prep (self, *args, **kwds):
+		self.app = kwds['app']
 
 	def init (self):
 		self.init_menu()

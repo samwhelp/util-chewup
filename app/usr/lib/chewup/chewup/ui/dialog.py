@@ -14,8 +14,9 @@ class Dialog:
 	reply_yes = Gtk.ResponseType.YES
 	reply_no = Gtk.ResponseType.NO
 
-	def __init__ (self):
-		pass
+	def prep (self, *args, **kwds):
+		self.app = kwds['app']
+		self.win = kwds['win']
 
 	def init (self):
 		pass
@@ -72,8 +73,8 @@ class Alert:
 	message = ''
 	type = 'dialog-information'
 
-	def __init__ (self):
-		pass
+	def prep (self, *args, **kwds):
+		self.app = kwds['app']
 
 	def init (self):
 		self.init_dialog()
@@ -97,8 +98,8 @@ class Info:
 	message = ''
 	type = Gtk.MessageType.INFO
 
-	def __init__ (self):
-		pass
+	def prep (self, *args, **kwds):
+		self.app = kwds['app']
 
 	def init (self):
 		self.init_dialog()
@@ -137,8 +138,8 @@ class Confirm:
 	message = ''
 	type = Gtk.MessageType.INFO
 
-	def __init__ (self):
-		pass
+	def prep (self, *args, **kwds):
+		self.app = kwds['app']
 
 	def init (self):
 		self.init_dialog()

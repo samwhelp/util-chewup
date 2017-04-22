@@ -4,8 +4,8 @@ from chewing import userphrase
 class Service:
 	app = None
 
-	def __init__ (self):
-		pass
+	def prep (self, *args, **kwds):
+		self.app = kwds['app']
 
 	def init (self):
 		pass

@@ -14,8 +14,8 @@ class UserPhraseInput:
 	btn_remove = None
 	btn_refresh = None
 
-	def __init__ (self):
-		pass
+	def prep (self, *args, **kwds):
+		self.app = kwds['app']
 
 	def init (self):
 		self.init_button()

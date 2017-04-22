@@ -2,8 +2,10 @@
 import signal
 
 class Signal:
-	def __init__ (self):
-		pass
+	app = None
+
+	def prep (self, *args, **kwds):
+		self.app = kwds['app']
 
 	def init (self):
 		self.init_signal()

@@ -4,8 +4,8 @@ class Mediator:
 
 	user_phrase_selected = ('', '')
 
-	def __init__ (self):
-		pass
+	def prep (self, *args, **kwds):
+		self.app = kwds['app']
 
 	def init (self):
 		pass

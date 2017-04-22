@@ -9,14 +9,10 @@ from chewup.signal import Signal
 
 
 class App:
-
 	name = 'chewup-remove'
 
 	args = None
 	args_parser = None
-
-	def __init__ (self):
-		pass
 
 	def init (self):
 		self.init_siginal()
